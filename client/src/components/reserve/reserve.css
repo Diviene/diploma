@@ -1,0 +1,302 @@
+.reserve {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.rContainer {
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.rClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.rFilter {
+  margin-bottom: 20px;
+}
+
+.selectContainer {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.rItem {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rItemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.rItemInfo > div {
+  margin-bottom: 5px;
+}
+
+.rTitle {
+  font-weight: bold;
+}
+
+.rDesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rImg {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.bookingButton,
+.bookedButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  max-width: 100px;
+}
+
+.bookingButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bookingButton:hover,
+.bookedButton:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center; /* Центрирует элементы пагинации */
+  padding: 10px 0;
+  list-style-type: none; /* Убирает маркеры списка */
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-link {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Центрирует текст внутри кнопки */
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bookingInfo {
+  margin-bottom: 10px;
+}
+
+.bookingInfo div {
+  margin-bottom: 4px;
+}
+
+.bookingInfo div:last-child {
+  margin-bottom: 0;
+}
+
+.bookingInfoLabel {
+  font-weight: bold;
+}
+
+.modalContent {
+  margin-bottom: 20px;
+}
+
+.modalContent > div {
+  margin-bottom: 10px;
+}
+
+.roomCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.roomCardTitle {
+  font-weight: bold;
+}
+
+.roomInfo {
+  margin-top: 8px;
+}
+
+.roomInfo div {
+  margin-bottom: 4px;
+}
+
+.roomInfo div:last-child {
+  margin-bottom: 0;
+}
+
+.roomInfoLabel {
+  font-weight: bold;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+}
+
+.modalClose:hover {
+  color: #555;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.bookButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.bookButton:hover {
+  background-color: #45a049;
+}
+
+.bookedItem {
+  background-color: lightgrey; 
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; 
+}
+
+.totalPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.payButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payButton:hover {
+  background-color: #45a049;
+}
+
+.payButton:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed;
+}
+
+.payButton:disabled:hover {
+  background-color: #cccccc;
+}
+

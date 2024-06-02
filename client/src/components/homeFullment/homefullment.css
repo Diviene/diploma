@@ -1,0 +1,47 @@
+.home-fulfillment {
+    max-width: 800px;
+    margin: 20px auto 0;
+  }
+  
+  .useful-info,
+  .about-us,
+  .interesting-facts,
+  .photo-gallery {
+    margin-bottom: 30px;
+  }
+  
+  .useful-info h2,
+  .about-us h2,
+  .interesting-facts h2 {
+    color: #003580;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .useful-info p,
+  .about-us p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .interesting-facts ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .interesting-facts ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .photo-gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .photo-gallery img {
+    width: calc(33.33% - 10px);
+    border-radius: 8px;
+  }

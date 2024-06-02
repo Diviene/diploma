@@ -1,0 +1,144 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle{
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lsItem{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.lsItem>label{
+  font-size: 12px;
+}
+
+.lsItem>input{
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+.lsItem>span{
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions{
+  padding: 10px;
+}
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.lsOptionInput{
+  width: 50px;
+  border-radius: 10px;
+}
+
+.listSearch>button{
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listResult {
+  flex: 3;
+}
+
+.homeContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.lsItem select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  appearance: none; /* Убираем стандартные стрелки в Firefox */
+}
+
+.lsItem select::-ms-expand {
+  display: none; /* Убираем стандартные стрелки в IE */
+}
+
+/* Стили для псевдоэлемента, имитирующего стрелку */
+.lsItem select::after {
+  content: "\25BC"; /* Знак стрелки вниз */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Стили для фокуса */
+.lsItem select:focus {
+  box-shadow: 0 0 5px rgba(38, 145, 217, 0.5);
+}
+
+/* Стили для выбранных опций */
+.lsItem select option:checked {
+  background-color: #0071c2;
+  color: #ffffff;
+}
+
+.resetButton {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-top: 16px; /* Добавляем отступ сверху для разделения кнопки от других элементов */
+  transition: background-color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: #f0f0f0;
+}

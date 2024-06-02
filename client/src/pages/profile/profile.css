@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    margin: auto;
+    width: 50%;
+    background-color: #0004ff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .profile-content {
+    margin: auto;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info {
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .profile-info p {
+    margin-top: 0;
+    color: #666;
+  }
+
+  .button-div{
+    width: 52%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #001aff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .delete-button {
+    background-color: #ff5a5a;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff3b3b;
+  }
+  
+  .back-button {
+    background-color: #4caf50;
+  }
+  
+  .back-button:hover {
+    background-color: #43a047;
+  }
+
+  .button.active {
+    background-color: #ff0000;
+  }
+  
+  .tab-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    background-color: #555;
+  }

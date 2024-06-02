@@ -1,0 +1,173 @@
+.slider {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure slider takes full width */
+}
+
+.sliderWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 1000px;
+  position: relative;
+}
+
+.sliderImg {
+  width: 1000px;
+  max-height: 1000px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.starRating {
+  width: 100px;
+  height: 20px;
+  border-radius: 20%;
+  padding: 5px;
+}
+
+.backButton {
+  position: relative;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333; /* Цвет текста кнопки */
+  display: flex;
+  align-items: center;
+}
+
+.backButton:hover {
+  color: #666; /* Изменение цвета текста при наведении */
+}
+
+.backButton svg {
+  margin-right: 5px; /* Расстояние между иконкой и текстом */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  z-index: 2; /* Ensure arrows are above the slider */
+}
+
+.arrow.left {
+  left: 10px; /* Position left arrow */
+}
+
+.arrow.right {
+  right: 10px; /* Position right arrow */
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.hotelContainer {
+  text-align: center;
+  padding: 20px; /* Add padding for better spacing */
+}
+.hotelWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9; /* Add a light background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.hotelTitle {
+  margin-top: 20px;
+  font-size: 28px; /* Increase font size for emphasis */
+}
+
+
+.bookNow {
+  margin-top: 20px;
+  padding: 12px 24px; /* Increase padding */
+  font-size: 18px; /* Increase font size */
+}
+
+.hotelDistance {
+  margin-top: 10px;
+}
+
+.hotelImages {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hotelImgWrapper {
+  margin-right: 10px;
+}
+
+.hotelImg {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hotelImg:hover {
+  transform: scale(1.1);
+}
+
+.hotelDetails {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotelDetailsTexts {
+  flex: 1;
+  text-align: left;
+}
+
+.hotelDetailsPrice {
+  flex: 1;
+  text-align: right;
+}
+
+.bookNow {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookNow:hover {
+  background-color: #0056b3;
+}
+
+.modalContent {
+  opacity: 0; /* Начальное значение прозрачности */
+  transition: opacity 0.5s ease; /* Анимация изменения прозрачности */
+}
+
+.modal.show .modalContent {
+  opacity: 1; /* Конечное значение прозрачности */
+}

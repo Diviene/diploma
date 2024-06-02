@@ -1,0 +1,138 @@
+.mainDiv {
+  margin-top: 10px;
+  text-align: center;
+  animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .headerBooking{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .booking-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    margin-right: 20px;
+  }
+  
+  .booking-card p {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+
+  .room-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .room-card {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .fullInfo {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    border-radius: 2px;
+    border-color: black;
+  }
+
+  .bookCancel {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    border-radius: 2px;
+    border-color: black;
+    width: 100%;
+  }
+  
+  .bookCancel:hover {
+    background-color: Red;
+    color: white;
+  }
+
+  .butCancel{
+    margin-top: 10px;
+  }
+
+  .close{
+    color: black;
+  }
+
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    animation: modal-appear 0.3s ease-out; /* Анимация появления */
+  }
+  
+  @keyframes modal-appear {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .modal-paragraph {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }

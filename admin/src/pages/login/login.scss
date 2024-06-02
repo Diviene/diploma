@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.centered h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.centered form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_fielded{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_fielded input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_fielded label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_fielded span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_fielded input:focus ~ label,
+.txt_fielded input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_fielded input:focus ~ span::before,
+.txt_fielded input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+  font-size: 14px;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+.usernameinput{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+.usernameinput:hover{
+  border-color: #2691d9;
+  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.loginbth{
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+        background: #2691d9;
+        border-radius: 25px;
+        font-size: 18px;
+        color: #e9f4fb;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 20px;
+}
+.loginbth:hover{
+    border-color: #2691d9;
+  transition: .5s;
+}
+
+.logo-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+.image1{
+ width: 150px;
+ height: 150px; 
+}
+.backgroundcolor{
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  height: 958px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }

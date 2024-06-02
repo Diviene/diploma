@@ -1,0 +1,157 @@
+.single {
+    display: flex;
+    width: 100%;
+    .singleContainer {
+      flex: 6;
+  
+      .top {
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; // Чтобы элементы выравнивались по вертикали
+          }
+          
+          .title {
+            margin: 0; // Чтобы убрать дефолтный отступ у заголовка
+          }
+          
+  
+        .left {
+          flex: 1;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 20px;
+          position: relative;
+
+          .buttons {
+            display: flex;
+            gap: 10px;
+          }
+          .backButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+          }
+          
+          .backButton:hover {
+            background-color: darkcyan;
+          }
+          
+          .editButton,
+          .deleteButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          
+          .editButton {
+            background-color: orange;
+            color: white;
+            margin-right: 10px;
+            margin-left: -5px;
+          }
+          
+          .deleteButton {
+            background-color: red;
+            color: white;
+          }
+          
+          .editButton:hover,
+          .deleteButton:hover {
+            filter: brightness(1.2); /* Увеличивает яркость при наведении */
+          }
+  
+          .item {
+            display: flex;
+            gap: 20px;
+
+            .photosContainer {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); // Гибкие колонки, каждая не меньше 150px
+              grid-gap: 10px; // Отступ между изображениями
+            }
+            
+            .itemImg {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .photoItem {
+              width: 100%;
+              height: 150px; // Фиксированная высота для изображений
+              object-fit: cover; // Масштабирование изображения до заполнения контейнера
+              border-radius: 8px; // Закругленные углы
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Тень для эффекта поднятия
+              transition: transform 0.3s ease; // Плавное изменение при наведении
+            }
+
+            .photoItem:hover {
+              transform: scale(1.05); // Увеличение при наведении
+            }
+  
+            .details {
+              .itemTitle {
+                margin-bottom: 10px;
+                color: #555;
+              }
+  
+              .detailItem {
+                margin-bottom: 10px;
+                font-size: 14px;
+                
+                .available {
+                  color: green;
+                }
+                
+                .unavailable {
+                  color: red;
+                }
+  
+                .itemKey {
+                  font-weight: bold;
+                  color: gray;
+                  margin-right: 5px;
+                }
+  
+                .itemValue {
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+  
+        .right {
+          flex: 2;
+        }
+      }
+  
+      .bottom {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 10px 20px;
+      }
+  
+      .title {
+        font-size: 16px;
+        color: black;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  

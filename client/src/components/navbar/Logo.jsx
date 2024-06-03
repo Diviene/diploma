@@ -11,6 +11,7 @@ const Logo = () => {
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     navigate("/");
+    window.location.reload();
   };
 
   return (
@@ -40,7 +41,7 @@ const Logo = () => {
           ) : (
             <>
               <span style={{ marginRight: "10px" }}>
-                Зарегистрируйтесь прямо сейчас! -{">"}
+                Зарегистрируйтесь прямо сейчас! - {">"}
               </span>
               <Link to="/register">
                 <button className="navButton">Регистрация</button>

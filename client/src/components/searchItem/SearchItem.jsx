@@ -24,8 +24,6 @@ const SearchItem = ({ item }) => {
   const dates = JSON.parse(storedDates);
   const options = JSON.parse(storedOptions);
 
-  console.log(dates, options);
-
   const handleCheckAvailability = () => {
     setHotelId(item._id);
     navigate(`/hotels/${item._id}`);

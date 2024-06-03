@@ -104,12 +104,14 @@ export const getHotelRoomsByHotelId = async (req, res, next) => {
 
       const hotelRooms = await HotelRoom.find(filter).populate({
         path: 'HotelRoomTypeId',
-        select: 'Name'
-      });
+        select: 'Name PriceForAdult PriceForChild',
+    });
   
       const result = hotelRooms.map(hotelRoom => ({
         ...hotelRoom.toObject(),
-        HotelRoomType: hotelRoom.HotelRoomTypeId.Name
+        HotelRoomType: hotelRoom.HotelRoomTypeId.Name,
+        priceForAdult: hotelRoom.HotelRoomTypeId.PriceForAdult,
+        priceForChildren: hotelRoom.HotelRoomTypeId.PriceForChild
       }));
   
       res.status(200).json(result);

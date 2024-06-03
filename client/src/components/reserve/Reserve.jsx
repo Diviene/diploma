@@ -93,6 +93,8 @@ const Reserve = ({ setOpen, hotelId }) => {
     fetchHotelRooms();
   }, [hotelId, selectedRoomType]);
 
+  console.log(selectedRooms);
+
   const handleImageClick = (photos) => {
     setSliderPhotos(photos);
     setIsSliderOpen(true);
@@ -292,6 +294,12 @@ const Reserve = ({ setOpen, hotelId }) => {
                   <div>Номер комнаты: {room.HotelRoomNumber}</div>
                   <div className="rTitle">
                     Тип комнаты: {room.HotelRoomType}
+                  </div>
+                  <div className="rTitle">
+                    Цена за взрослого: {room.priceForAdult} р.
+                  </div>
+                  <div className="rTitle">
+                    Цена за ребенка: {room.priceForChildren} р.
                   </div>
                   <div className="rDesc">
                     {room.photos.slice(0, 2).map((photo, index) => (

@@ -5,7 +5,6 @@ const HotelRoomTypeSchema = new mongoose.Schema({
     Rating: {
         type: Number,
         required: true,
-        unique: true
     },
     Name: {
         type: String,

@@ -23,7 +23,7 @@ const Register = () => {
   });
   const [passwordError, setPasswordError] = useState("");
   const [dateError, setDateError] = useState("");
-  const [file, setFile] = useState(null); // State to manage the file upload
+  const [file, setFile] = useState(null);
 
   useEffect(() => {
     setIsActive(true);

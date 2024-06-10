@@ -4,6 +4,8 @@ import { createBooking, deleteBooking, getBookingById, getBookings, getBookingsB
 
 const router = express.Router();
 
+router.get("/:id", getBookingById)
+
 router.post("/", createBooking);
 
 router.get("/getByRoom/:roomId", getBookingsByRoom);

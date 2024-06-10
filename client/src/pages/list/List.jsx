@@ -87,8 +87,6 @@ const List = () => {
     `/hotels/hotelbyParams?CityId=${destination}&HotelChainId=${selectedHotelChain}&HotelRatingId=${selectedHotelRating}`
   );
 
-  console.log(data);
-
   useEffect(() => {
     reFetch();
   }, [destination, hotelChains, hotelRatings]);
@@ -112,8 +110,6 @@ const List = () => {
 
   const city = cities.find((city) => city._id === destination);
   const cityName = city ? city.name : "";
-
-  console.log(data);
 
   return (
     <div>
@@ -141,10 +137,14 @@ const List = () => {
             </div>
             <div className="lsItem">
               <label>Диапазон дат</label>
-              <span onClick={() => setOpenDate(!openDate)}>{`${format(
-                dates[0].startDate,
-                "MM/dd/yyyy"
-              )} to ${format(dates[0].endDate, "MM/dd/yyyy")}`}</span>
+              <span onClick={() => setOpenDate(!openDate)}>
+                {" "}
+                с{" "}
+                {`${format(dates[0].startDate, "dd.MM.yyyy")} до ${format(
+                  dates[0].endDate,
+                  "dd.MM.yyyy"
+                )}`}
+              </span>
               {openDate && (
                 <DateRange
                   onChange={handleDateChange}

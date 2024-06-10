@@ -11,21 +11,9 @@ import ProfilePage from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
 import ForgotPassword from "./components/forgotPassword/ForgotPassword";
 import EditProfileForm from "./pages/profile/EditForm/EditProfileForm";
-import { useEffect } from "react";
 
 
 function App() {
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      localStorage.removeItem('user');
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
   return (
     <BrowserRouter>
       <Routes>

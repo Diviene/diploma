@@ -68,6 +68,7 @@ const ForgotPassword = () => {
         [inputType]: inputValue,
         code: verificationCode,
       });
+      setErrorMessage("");
       setSuccessMessage("Код подтвержден. Вы можете сбросить пароль.");
       setIsCodeVerified(true);
     } catch (error) {

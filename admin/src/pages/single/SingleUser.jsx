@@ -18,7 +18,7 @@ const SingleUser = () => {
   }
 
   if (!data) {
-    return <div>No user data found.</div>;
+    return <div>Информация не найдена.</div>;
   }
 
   var originalDate = data.DateOfBirth;
